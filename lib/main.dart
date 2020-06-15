@@ -21,19 +21,18 @@ class MyHome extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Nilay Ingle'),
             FlatButton(
-              child: Text('Click Here'),
-              onPressed: () => print('Button Pressed'),
+              child: Text('Click Here'), 
+              onPressed: () => print('Button pressed'),
               color: Colors.red,
               textColor: Colors.white,
-            ),
+              ),
             Text('Nilay Tech')
-          ],
-        ),
+          ],),
       ),
     );
   }
