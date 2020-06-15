@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toast/toast.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +13,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHome extends StatelessWidget {
+class MyHome extends StatefulWidget {
+  @override
+  _MyHomeState createState() => _MyHomeState();
+}
+
+class _MyHomeState extends State<MyHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,15 +30,21 @@ class MyHome extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Nilay Ingle'),
             FlatButton(
-              child: Text('Click Here'), 
-              onPressed: () => print('Button pressed'),
+              child: Text('Click Here'),
+              onPressed: () => Toast.show(
+                'Toast Demo', 
+                context,
+                duration: Toast.LENGTH_LONG, 
+                gravity: Toast.BOTTOM,
+                backgroundColor: Colors.blue,
+                textColor: Colors.white,
+              ),
               color: Colors.red,
               textColor: Colors.white,
-              ),
-            Text('Nilay Tech')
-          ],),
+            ),
+          ],
+        ),
       ),
     );
   }
