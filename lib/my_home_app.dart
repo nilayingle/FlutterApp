@@ -15,15 +15,24 @@ class _MyHomeState extends State<MyHome> {
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: OutlineButton(
-          onPressed: () => print('button pressed'),
+        child: FlatButton(
           child: Icon(Icons.add),
-          borderSide: BorderSide(
-            color: Colors.red,
-            width: 5,
-          ),
+          onPressed: null,
+          color: Colors.blue,
+          disabledColor: Colors.red,
+          onLongPress: () => Toast.show('Add Button', context),
         ),
       ),
+      // body: Center(
+      //   child: OutlineButton(
+      //     onPressed: () => print('button pressed'),
+      //     child: Icon(Icons.add),
+      //     borderSide: BorderSide(
+      //       color: Colors.red,
+      //       width: 5,
+      //     ),
+      //   ),
+      // ),
       // body: Center(
       //   child: RaisedButton(
       //     onPressed: null,
