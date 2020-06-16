@@ -15,16 +15,29 @@ class _MyHomeState extends State<MyHome> {
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: IconButton(
-          icon: Icon(Icons.add),
-          onPressed: () => print('button pressed'),
-          color: Colors.red,
-          iconSize: 40.0,
-          splashColor: Colors.lightGreenAccent,
-          padding: EdgeInsets.all(20.0),
-          tooltip: 'Click Here to Add Your Photo',
+        child: Ink(
+          decoration: ShapeDecoration(
+            shape: CircleBorder(),
+            color: Colors.green,
+          ),
+          child: IconButton(
+            icon: Icon(Icons.android),
+            onPressed: () => print('Button Pressed'),
+            color: Colors.white,
+          ),
         ),
       ),
+      // body: Center(
+      //   child: IconButton(
+      //     icon: Icon(Icons.add),
+      //     onPressed: () => print('button pressed'),
+      //     color: Colors.red,
+      //     iconSize: 40.0,
+      //     splashColor: Colors.lightGreenAccent,
+      //     padding: EdgeInsets.all(20.0),
+      //     tooltip: 'Click Here to Add Your Photo',
+      //   ),
+      // ),
       // body: Center(
       //   child: FlatButton(
       //     child: Icon(Icons.add),
