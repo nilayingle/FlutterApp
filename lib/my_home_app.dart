@@ -15,15 +15,25 @@ class _MyHomeState extends State<MyHome> {
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: RaisedButton(
-          onPressed: null,
+        child: OutlineButton(
+          onPressed: () => print('button pressed'),
           child: Icon(Icons.add),
-          color: Colors.red,
-          colorBrightness: Brightness.dark,
-          elevation: 10,
-          disabledColor: Colors.cyan,
+          borderSide: BorderSide(
+            color: Colors.red,
+            width: 5,
+          ),
         ),
       ),
+      // body: Center(
+      //   child: RaisedButton(
+      //     onPressed: null,
+      //     child: Icon(Icons.add),
+      //     color: Colors.red,
+      //     colorBrightness: Brightness.dark,
+      //     elevation: 10,
+      //     disabledColor: Colors.cyan,
+      //   ),
+      // ),
       // body: Center(
       //   child: RichText(
       //     text: TextSpan(
@@ -71,9 +81,9 @@ class _MyHomeState extends State<MyHome> {
       //       FlatButton(
       //         child: Text('Click Here'),
       //         onPressed: () => Toast.show(
-      //           'Toast Demo', 
+      //           'Toast Demo',
       //           context,
-      //           duration: Toast.LENGTH_LONG, 
+      //           duration: Toast.LENGTH_LONG,
       //           gravity: Toast.BOTTOM,
       //           backgroundColor: Colors.blue,
       //           textColor: Colors.white,
