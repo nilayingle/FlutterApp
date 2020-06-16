@@ -12,20 +12,26 @@ class _MyHomeState extends State<MyHome> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blue,
       ),
-      body: Center(
-        child: Ink(
-          decoration: ShapeDecoration(
-            shape: CircleBorder(),
-            color: Colors.green,
-          ),
-          child: IconButton(
-            icon: Icon(Icons.android),
-            onPressed: () => print('Button Pressed'),
-            color: Colors.white,
-          ),
-        ),
+      // body: Center(
+      //   child: Ink(
+      //     decoration: ShapeDecoration(
+      //       shape: CircleBorder(),
+      //       color: Colors.green[700],
+      //     ),
+      //     child: IconButton(
+      //       icon: Icon(Icons.android),
+      //       onPressed: () => print('Button Pressed'),
+      //       color: Colors.white,
+      //     ),
+      //   ),
+      // ),
+      floatingActionButton: FloatingActionButton.extended(label: Text('Upload Photo'),
+        icon: Icon(Icons.add),
+        onPressed: () => print('FAB Pressed'),
+        backgroundColor: Colors.blue,
+        tooltip: 'Click here to upload photo',
       ),
       // body: Center(
       //   child: IconButton(
@@ -38,15 +44,14 @@ class _MyHomeState extends State<MyHome> {
       //     tooltip: 'Click Here to Add Your Photo',
       //   ),
       // ),
-      // body: Center(
-      //   child: FlatButton(
-      //     child: Icon(Icons.add),
-      //     onPressed: null,
-      //     color: Colors.blue,
-      //     disabledColor: Colors.red,
-      //     onLongPress: () => Toast.show('Add Button', context),
-      //   ),
-      // ),
+      body: Center(
+        child: FlatButton.icon(
+          icon: Icon(Icons.android),
+          onPressed: () => print('Android Logo'),
+          color: Colors.green[700],
+          label: Text('Adnroid'),
+        ),
+      ),
       // body: Center(
       //   child: OutlineButton(
       //     onPressed: () => print('button pressed'),
