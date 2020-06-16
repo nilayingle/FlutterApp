@@ -15,32 +15,42 @@ class _MyHomeState extends State<MyHome> {
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: RichText(
-          text: TextSpan(
-            text: 'Nilay',
-            style: TextStyle(
-              color: Colors.cyan,
-              fontSize: 15,
-            ),
-            children: <TextSpan>[
-              TextSpan(
-                text: 'Ingle : ',
-                style: TextStyle(
-                  color: Colors.red,
-                  fontSize: 30,
-                ),
-              ),
-              TextSpan(
-                text: 'Flutter',
-                style: TextStyle(
-                  color: Colors.green,
-                  fontSize: 20,
-                ),
-              ),
-            ]
-          ),
+        child: RaisedButton(
+          onPressed: null,
+          child: Icon(Icons.add),
+          color: Colors.red,
+          colorBrightness: Brightness.dark,
+          elevation: 10,
+          disabledColor: Colors.cyan,
         ),
       ),
+      // body: Center(
+      //   child: RichText(
+      //     text: TextSpan(
+      //       text: 'Nilay',
+      //       style: TextStyle(
+      //         color: Colors.cyan,
+      //         fontSize: 15,
+      //       ),
+      //       children: <TextSpan>[
+      //         TextSpan(
+      //           text: 'Ingle : ',
+      //           style: TextStyle(
+      //             color: Colors.red,
+      //             fontSize: 30,
+      //           ),
+      //         ),
+      //         TextSpan(
+      //           text: 'Flutter',
+      //           style: TextStyle(
+      //             color: Colors.green,
+      //             fontSize: 20,
+      //           ),
+      //         ),
+      //       ]
+      //     ),
+      //   ),
+      // ),
       // body: Center(
       //   child: Text(
       //     'Nilay Ingle',
